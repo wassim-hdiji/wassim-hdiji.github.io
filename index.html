@@ -1,118 +1,290 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Wassim Hdiji | XR Developer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f0f1a;
-            color: white;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-
-        h2 {
-            font-weight: normal;
-            color: #a0a0ff;
-            margin-top: 10px;
-        }
-
-        p {
-            max-width: 600px;
-            margin-top: 20px;
-            color: #cccccc;
-        }
-
-        .btn {
-            margin-top: 30px;
-            padding: 12px 20px;
-            background: #4c5cff;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background: #3a47cc;
-        }
-    </style>
-</head>
-
 <body>
+<canvas id="bg"></canvas>
 
-    <!-- HERO -->
-    <div class="hero">
-        <h1>Wassim Hdiji</h1>
-        <h2>Unity & XR Developer</h2>
+<!-- NAVBAR -->
+<header class="navbar">
 
-        <p>
-            I build immersive AR and VR applications using Unity, C#, and Meta Quest.
-            Focused on interactive experiences, real-time systems, and XR development.
+    <div class="logo">XR//WH</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#indar">INDAR</a>
+        <a href="#projects">Systems</a>
+        <a href="#stack">Stack</a>
+        <a href="#certifications">certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="cv-btn" href="files/Wassim_Hdiji_CV.pdf" download>CV</a>
+<link rel="stylesheet" href="css/style.css">
+
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            UNITY • XR • AI • WEB & MOBILE
         </p>
 
-        <a class="btn" href="#projects">View Projects</a>
-    </div>
+        <h1 class="hero-title">
+            WASSIM<br>HDIJI
+        </h1>
 
-    <!-- PROJECTS -->
-  <section id="projects" style="padding: 80px 20px; text-align: center;">
-    <h2 style="font-size: 36px; margin-bottom: 40px;">Featured Projects</h2>
+        <div class="hero-line"></div>
 
-    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <h2 class="hero-headline">
+            Building the Next Generation of
+            <span>Immersive Digital Experiences</span>
+        </h2>
 
-        <!-- INDAR -->
-        <div style="background:#1a1a2e; padding:20px; border-radius:12px; width:320px;">
-            <h3>INDAR – VR E-Commerce Platform</h3>
-            <p>
-                Unity • Meta Quest 3 • REST API • MongoDB
-            </p>
-            <p style="font-size:14px; color:#ccc;">
-                VR shopping experience integrated with backend services. I worked mainly on VR interaction, product visualization, and immersive UI.
-            </p>
+        <p class="hero-description">
+            Unity XR developer focused on spatial computing,
+            interactive systems, and real-time 3D experiences
+            across AR, VR, and IoT ecosystems.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#indar" class="btn">Explore Flagship System</a>
+
+            <a href="files/Wassim_Hdiji_CV.pdf" class="btn secondary" download>
+                Download CV
+            </a>
+
         </div>
 
-        <!-- AR IoT LAB -->
-        <div style="background:#1a1a2e; padding:20px; border-radius:12px; width:320px;">
-            <h3>AR IoT Lab App (Archive)</h3>
-            <p>
-                Unity • ESP32 • Firebase • ARCore • Vuforia • C#
+    </div>
+
+</section>
+
+<!-- INDAR FLAGSHIP -->
+<section id="indar" class="section">
+
+    <div class="card project-card">
+
+        <div class="project-header">
+            <h3>INDAR – VR E-Commerce Platform</h3>
+            <span class="badge">FLAGSHIP XR</span>
+        </div>
+
+        <p class="project-desc">
+            A full VR shopping experience built for Meta Quest 3,
+            integrating REST APIs and MongoDB for real-time interaction.
+        </p>
+
+        <div class="project-meta">
+            Unity • Meta Quest 3 • REST API • MongoDB • C#
+        </div>
+
+        <div class="project-media">
+            <video controls muted playsinline>
+                <source src="./videos/indar-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SYSTEMS -->
+<section id="projects" class="section">
+
+    <h2>XR Systems</h2>
+
+    <div class="grid">
+
+        <!-- AR IoT -->
+        <div class="card project-card">
+
+            <div class="project-header">
+                <h3>AR IoT Lab</h3>
+                <span class="badge">EXPERIMENT</span>
+            </div>
+
+            <p class="project-desc">
+                Unity ARCore system connected with ESP32 sensors and Firebase realtime data.
             </p>
-            <p style="font-size:14px; color:#ccc;">
-                AR system connected to IoT devices allowing real-time interaction between physical sensors and augmented reality visualization.
-            </p>
+
+            <div class="project-meta">
+                Unity • ESP32 • Firebase • ARCore • Vuforia
+            </div>
+
+            <div class="project-media">
+                <video controls muted playsinline>
+                    <source src="./videos/iot-lab.mp4" type="video/mp4">
+                </video>
+            </div>
+
         </div>
 
         <!-- XenoR -->
-        <div style="background:#1a1a2e; padding:20px; border-radius:12px; width:320px;">
-            <h3>XenoR – Educational AR App</h3>
-            <p>
-                Unity • Vuforia • AR
-            </p>
-            <p style="font-size:14px; color:#ccc;">
-                Interactive AR learning platform designed for children to explore educational content through gamified experiences.
-            </p>
+        <div class="card project-card">
+
+            <div class="project-header">
+                <h3>XenoR – AR Education</h3>
+                <span class="badge">EDUCATION</span>
+            </div>
+
+            <p class="project-desc">
+  An AR learning experience designed for interactive education
+  using Vuforia-based marker tracking. This project was developed
+  as part of the Open Startup competition, focusing on innovative
+  educational XR solutions.            </p>
+
+            <div class="project-meta">
+                Unity • Vuforia • AR Education
+            </div>
+
+            <div class="project-media">
+                <video controls muted playsinline>
+                    <source src="./videos/XeoRDemo.mp4" type="video/mp4">
+                </video>
+            </div>
+
         </div>
 
     </div>
+
 </section>
 
+<!-- STACK -->
+<section id="stack" class="section">
+
+  <h2>Technology Stack</h2>
+
+  <div class="stack-grid">
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg">
+      <span>Unity</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
+      <span>C#</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+      <span>JavaScript</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+      <span>Firebase</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+      <span>MongoDB</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+      <span>HTML5</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+      <span>CSS3</span>
+    </div>
+
+    <div class="stack-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg">
+      <span>Three.js</span>
+    </div>
+
+  </div>
+
+</section>
+<section id="certifications" class="section">
+
+  <h2>Certifications & Organizations</h2>
+
+  <div class="org-grid">
+
+    <!-- OPEN STARTUP -->
+    <div class="org-card">
+      <h3>Open Startup</h3>
+
+      <div class="cert-image">
+        <img src="./files/Open_Startup.jpg" alt="Open Startup Certificate">
+      </div>
+
+      <p>
+        Participated in innovation and startup ideation programs focused on building scalable tech solutions.
+      </p>
+    </div>
+
+    <!-- AIESEC 
+    <div class="org-card">
+      <h3>AIESEC</h3>
+
+      <div class="cert-image">
+        <img src="./certs/aiesec.jpg" alt="AIESEC Certificate">
+      </div>
+
+      <p>
+        Member of AIESEC, developing leadership, teamwork, and international collaboration experience.
+      </p>
+    </div> -->
+
+    <!-- COSPACES -->
+    <div class="org-card">
+      <h3>CoSpaces Edu</h3>
+
+      <div class="cert-image">
+        <img src="./files/cospaces_Certificate.jpg" alt="CoSpaces Certificate">
+      </div>
+
+      <p>
+        Certified in CoSpaces Edu for building interactive AR/VR educational experiences.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+<!-- CONTACT -->
+<section id="contact" class="section">
+
+  <h2>Contact Terminal</h2>
+
+  <div class="terminal">
+
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">XR CONTACT SYSTEM</span>
+    </div>
+
+    <div class="terminal-body">
+      <p><span class="prompt">></span> initializing contact node...</p>
+
+      <p><span class="prompt">></span> scanning developer profile...</p>
+
+      <p><span class="prompt">></span> email: <span class="highlight">wassimhdiji33@gmail.com</span></p>
+
+      <p><span class="prompt">></span> linkedin: /wassim-hdiji</p>
+
+      <p><span class="prompt">></span> github: /wassim-hdiji</p>
+
+      <p><span class="prompt">></span> status: <span class="active">OPEN FOR OPPORTUNITIES</span></p>
+
+      <p class="cursor-line">
+        <span class="prompt">></span> <span class="cursor">█</span>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="js/background3d.js"></script>
+
 </body>
-</html>
